@@ -1,0 +1,36 @@
+<nav>
+<div class="" style=" ">
+	<ul style="display: flex;list-style: none; justify-content: center;">
+		<li style="">
+			<a><%=link_to "Home",root_path %></a>
+		</li>
+		<li>
+			<a> <%=link_to "AboutThis",pages_about_path %></a>
+		</li>
+		<% if current_user %>
+			<li><a class="..." href="#">
+				<%= link_to "Upload", new_post_path %>
+
+			</a></li>
+			<li><a class="..." href="#">
+				<%#=link_to "My media",pages_media_path %>
+				
+			</a></li>
+			<li><a class="..." href="#">
+				<%#=link_to "Profile",current_user %>
+				
+			</a></li>
+			<%= button_to(
+				"Log Out",
+				destroy_user_session_path, method: :delete)%></li>
+				<% else %>
+					<li><a>
+						<%= link_to "Sing up",new_user_registration_path %>
+					</a></li>
+				<%end %>
+				
+
+	</ul>
+	
+</div>
+</nav>
