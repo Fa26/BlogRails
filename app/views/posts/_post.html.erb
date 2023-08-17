@@ -12,7 +12,7 @@
     <strong><%= pluralize(post.views,"view") %></strong>
   </p>
 
-  <%= image_tag post.image ,width:400 if post.image.attached? %>
+  <%= image_tag post.image ,class: "w-full h-70" if post.image.attached? %>
 
   
 

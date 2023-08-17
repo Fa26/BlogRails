@@ -1,0 +1,29 @@
+es:
+  activerecord:
+    attributes:
+      post:
+        title: 'Titulo'
+        image: 'Imagen'
+        video: 'Video'
+        description: 'Descripcion'
+    errors:
+      models:
+        post:
+          attributes:
+            title:
+              blank: 'no puede estar vacio'
+            description:
+              blank: 'no puede estar vacio'
+              too_short: 'es demasiado corto'
+
+  posts:
+    new:
+      title: 'Añadir nuevo material'
+    edit:
+      title: 'Editar material'
+    create:
+      created: 'Añadido un nuevo post correctamente '
+    update:
+      updated: 'Actualizado correctamente'
+    destroy:
+      destroyed: 'Eliminado correctamente'
